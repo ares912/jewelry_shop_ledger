@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jewelry Shop Ledger</title>
+</head>
+<body>
+    <h1>Welcome to Jewelry Shop Ledger</h1>
+    <a href="{{ url_for('add_customer') }}">Add New Customer</a>
+    <h2>Search Customer</h2>
+    <form action="{{ url_for('customer_info') }}" method="get">
+        <label for="customer_id">Customer ID:</label>
+        <input type="number" id="customer_id" name="id" required>
+        <input type="submit" value="Search">
+    </form>
+</body>
+</html>
